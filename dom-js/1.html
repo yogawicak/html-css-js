@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Javascript</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <h1>Learn DOM JS</h1>
+    <div id="box-1"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <input type="text" name="nama" id="input" value="nama">
+    <div id='box-merah'>
+        merah
+    </div>
+    <input type="text" id="submit">
+    <p id="p1"></p>
+    <script>
+    document.getElementById('box-1').innerHTML = 'Change with element by id'        
+    let boxes = document.getElementsByClassName('boxes')
+    boxes[0].innerHTML = 'change with className - 0'
+    boxes[1].innerHTML = 'change with className - 1'
+    boxes[2].innerHTML = 'change with className - 2'
+
+    let tag = document.getElementsByTagName('li')
+    tag[0].innerHTML = 'change with tagName - 0'
+    tag[1].innerHTML = 'Change with tagName - 1'
+    tag[2].innerHTML = 'Change with tagName - 2'
+
+    //menambah elemen
+    let ex = document.createElement('h5')
+    let text = document.createTextNode('Bikin h5 pake DOM')
+    let box = document.getElementsByClassName('boxes')[0]
+    ex.appendChild(text)
+    console.log(ex)
+    box.appendChild(ex)
+
+    //menghapus elemen
+    // box.removeChild(
+
+    //Bermain dengan attribut
+    let input = document.getElementById('input');
+    input.value = 'diganti dengan DOM';
+
+    input.style.border = '3px solid black';
+    input.style.backgroundColor = 'red';
+    function berubah2() {
+        input.style.backgroundColor = 'green'
+    }
+
+    //Bermain Event
+    input.addEventListener('mouseenter',(function() {
+        input.style.backgroundColor = 'red';
+    }()));
+
+
+    </script>
+</body>
+</html>

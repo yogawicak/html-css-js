@@ -1,0 +1,86 @@
+/* CSS STRUKTUR
+selector { property : value; }
+macam macam selector bisa berdasarkan:
+tag,id,class,pola/pattern
+total property 350++
+*//*CATATAN*/
+/*
+-pemberian color: nama warna,hexa,rgb
+
+PSEUDO CLASS : MENDIFINISIKAN STYLE PADA KEADAAN TERTENTU
+Pseudo class yang berhubungan dengan link :
+:link,:hover,:active:visited
+Pseudo class yang berhubungan dengan posisi elemen:
+:first-child, :last-child, :nth-child(n)
+
+Inheritence:Pewarisan
+Properti yang diwariskan:
+color,font,letter-spacing,line-height,list-style,dll
+
+Specificity
+*/
+
+
+/* STYLE UNTUK INDEX.HTML */
+
+.content h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+p   {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: oblique;
+    line-height: 35px;
+    text-align: center;
+}
+
+.ul1 li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* STYLE UNTUK SEPARATOR.html */
+
+.list-1 li{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-1 li a{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-2 li{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 , h3{
+    text-align: center;
+    font-size: 40px;
+    line-height: 10px;
+}
+
+h2:hover , h3:hover{
+    font-size: 50px;
+} 
+/* .click-link{
+    text-decoration: none;
+    text-align: center;
+} */
+
+.class-link a{
+    color: black;
+    text-align: center;
+}
+
+.div1:visited{
+    color: black;
+}
+
+li:first-child a{
+    font-size: 10px;
+}

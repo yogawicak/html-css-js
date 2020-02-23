@@ -1,0 +1,128 @@
+body{
+    height: 2000px;
+}
+
+.container{
+    width: 900px;
+    outline-style: solid;
+    outline-width: 1px;
+    margin: auto;
+}
+
+.container .judul{
+    text-align: center;
+}
+
+.static-relative{
+    outline-style: solid;
+    width: 300px;
+    float: left;
+}
+
+.box-1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box-2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 20px;
+    background-color:lightblue;
+    outline-style: solid;
+}
+
+.box-3{
+    width: 100px;
+    height: 100px;
+    background-color:greenyellow;
+}
+
+.absolute{
+    width: 300px;
+    outline-style: solid;
+    outline-width: 1px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+.box-4{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+}
+
+.box-5{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(195, 197, 57);
+}
+
+.box-6{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(154, 51, 192);
+}
+
+.z-index{
+    width: 300px;
+    float: left;
+    outline-width: 1px;
+    outline-style: solid;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.z-index div{
+    position: absolute;
+}
+
+.box-7{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    top: 10px;
+    left: 10px;
+
+}
+
+.box-8{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+.box-9{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    top: 80px;
+    left: 80px;
+}
+
+.cf:before,.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+ 
+.cf:after{
+    clear: both;
+}
+ 
+
+.cf{
+    *zoom: 1;
+}

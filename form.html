@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Form</title>
+</head>
+<body>
+    <a href="index.html">
+        <img src="img/back.png" alt="Back Button" width="100">
+    </a>
+    <br>
+    <a href="form-with-table.html" target="_blank">Menggabungkan </a>Form Dengan Table
+    <h1>Membuat Form Pendaftaran</h1>
+    <p>Info: Element Form{ input,textarea,select,button,label }</p>
+    <!-- label for harus sama dengan id input -->
+    <label for="username">Username: </label>
+    <input type="text" name="" id="username">
+    <br><br>
+    <label for="password">Password : </label>
+    <input type="text" id="password">
+    <h4>Pilih Jenis Kelamin</h4>
+    <input type="radio" name="jeniskelamin" id="pria"><label for="pria">Pria</label>
+    <input type="radio" name="jeniskelamin" id="wanita"><label for="wanita">Wanita</label>
+    <br>
+    <h4>Pilih Hobi</h4>
+    <input type="checkbox" id="sepedaan"><label for="sepedaan">Sepedaan</label>
+    <input type="checkbox" id="mainbola"><label for="mainbola">Main Bola</label>
+    <br>
+    <label for="lainnya">Lainnya :</label><input type="text" name="" id="lainnya">
+    <br>
+    <h4>Ceritakan Dirimu</h4>
+    <textarea name="" id="ceritadiri" cols="30" rows="10"></textarea>
+    <br>
+    <h4>Pilih Tempat Tinggal Kamu</h4>
+    <select name="" id="kota">
+        <option value="">Jakarta</option>
+        <option value="">Bandung</option>
+        <option value="">Cilacap</option>
+    </select>
+    <br>
+    <button type="submit">Daftar</button>
+</body>
+</html>

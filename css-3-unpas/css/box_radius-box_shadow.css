@@ -1,0 +1,80 @@
+body{
+    background-image: url(../../img/background-final_web.jpg);
+    height: 2000px;
+}
+
+
+.kotak{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border-radius: 100px;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.border-radius h2,.opacity-css h2{
+    color: white;
+}
+
+.kotak img{
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+
+.kotak-opacity{
+    width: 300px;
+    height: 300px;
+    background-color: turquoise;
+    opacity: 0.6;
+    position: relative;
+}
+
+.kotak-trans{
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.5;
+}
+
+.box-shadow{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    box-shadow: 10px 10px 10px rgba(104, 16, 16, 0.619);
+}
+
+.box-shadow-2{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(66, 248, 190);
+    box-shadow: 20px 30px 5px rgba(7, 2, 2, 0.857);
+    transition: 0.3s;
+}
+
+div.box-shadow-2:hover{
+    margin-left: 30px;
+    box-shadow: 10px 10px 5px rgba(7, 2, 2, 0.857);
+}
+
+.box-shadow-3{
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(234, 241, 96);
+    box-shadow: inset 0px 0px 100px 20px black, 
+    10px 10px 10px red,
+    -10px -10px 10px green;
+}
+
+h2{
+    color: white;
+}

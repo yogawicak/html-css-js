@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(163, 162, 162, 0.68);
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 1000px;
+}
+
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tipe-data-js{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+}
+
+.tipe-data-js h2{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.tipe-data-js h3{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.tipe-data-js ul{
+    margin-left: 20px;
+}
+
+.tipe-data-js ul li{
+    font-size: 14px;
+    margin: 3px;
+}
+
+.list-ss-js{
+    margin: 10px;
+    width: 600px;
+    height: auto;
+    background-color: white;
+}
+
+.list-ss-js .truthy,.escape{
+    width: 300px;
+}
+
+.list-ss-js .truthy{
+    /* float: left; */
+}
+
+.list-ss-js .escape{
+    /* margin-left: 50px; */
+    /* float: left; */
+}
+
+.tipe-data-js h1{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}

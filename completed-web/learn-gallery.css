@@ -1,0 +1,105 @@
+/* FONT LIST */
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+/* body{
+    margin: 0px;
+} */
+body{
+    height: 1000px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline-style: solid;
+    outline-width: 0.5px; */
+}
+
+/* header{
+    position: fixed;
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    height: 8vh;
+    width: auto;
+    font-family: 'ZCOOL QingKe HuangYou';
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    font-size: 40px;
+    padding-left: 50px;
+    letter-spacing: 5px;
+}
+
+.gambar img{
+    width: 100%;
+    height: 500px;
+}
+
+.nav-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+}
+
+.nav-links li{
+    list-style: none;
+    /* flex-basis: 70%; */
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    margin: 5px ;
+    background-color: white;
+}
+
+@media screen and (max-width:900px){
+    .nav-links{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:700px){
+    body{
+        overflow: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        border: 6px solid black;
+        background-color: rgb(63, 62, 62);
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}

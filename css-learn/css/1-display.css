@@ -1,0 +1,22 @@
+/* example otomatis display inline */
+
+.link-inline a{
+    background-color: steelblue;
+    width: 100px;
+    height: 100px;
+}
+
+/* example display inline block */
+
+.link-inline2 a{
+    background-color: tomato;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+/* example display block */
+
+h2 {
+    background-color: brown;
+}

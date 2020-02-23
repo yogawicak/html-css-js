@@ -1,0 +1,118 @@
+.container,.container-2,.container-3,.container-4{
+    width: 600px;
+    outline-style: solid;
+    outline-width: 1px;
+    margin: auto;
+    padding: 5px;
+}
+
+.bungkus{
+    width: 900px;
+    height: 300px;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.main{
+    width: 600px;
+    outline-style: solid;
+    outline-width: 1px;
+    float: left;
+}
+
+.sidebar{
+    width: 300px;
+    outline-style: solid;
+    outline-width: 1px;
+    float: left;
+}
+
+.footer{
+    width: 900px;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.satu,.dua,.tiga{
+    width: 100px;
+    height: 100px;
+}
+
+.satu{
+    background-color: blue;
+}
+
+.dua{
+    background-color: chartreuse;
+    float: right;
+}
+
+.tiga{
+    background-color: red;
+}
+
+.lorem{
+    font-size: 20px;
+}
+
+img{
+    float: right;
+}
+
+.kotak{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    outline-width: 1px;
+    outline-style: solid;
+    float: left;
+}
+
+.kolom-1{
+    width: 50px;
+    height: 75px;
+    background-color: red;
+    float: left;
+}
+
+.kolom-2{
+    width: 30px;
+    height: 100px;
+    background-color: greenyellow;
+    float: left;
+}
+
+.kolom-3{
+    width: 90px;
+    height: 80px;
+    background-color: hotpink;
+    float: left;
+}
+
+.clear-kolom{
+    clear: left;
+}
+
+.clear-kotak{
+    clear: left;
+}
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

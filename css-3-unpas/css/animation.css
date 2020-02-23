@@ -1,0 +1,28 @@
+body{
+    height: 2000px;
+}
+
+.kotak{
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    animation: animasiKotak 2s infinite alternate;
+}
+
+@keyframes animasiKotak{
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+
+    50%{
+        width: 300px;
+        height: 100px;
+    }
+
+    100%{
+        width: 300px;
+        height: 300px;
+    }
+}
+

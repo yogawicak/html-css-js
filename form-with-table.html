@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form With Table</title>
+</head>
+<body>
+    <a href="index.html">
+        <img src="img/back.png" alt="Back Button" width="100">
+    </a>
+    <h2>Form Dengan Table</h2>
+    <table border="0" cellspacing="0" cellpadding="1">
+        <form>
+        <thead>
+            <tr>
+                <th>
+                    <label for="username">Username : </label>
+                </th>
+                <th>
+                    <input type="text" name="" id="username">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <label for="password">Password :</label>
+                </th>
+                <th>
+                    <input type="text" id="password">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h4>Pilih Jenis Kelamin</h4>
+                </th>
+                <th>
+                <input type="radio" name="jeniskelamin" id="pria"><label for="pria">Pria</label>
+                <input type="radio" name="jeniskelamin" id="wanita"><label for="wanita">Wanita</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h4>Pilih Hobi</h4>
+                </th>
+                <th>
+                    <input type="checkbox" id="sepedaan"><label for="sepedaan">Sepedaan</label>
+                    <input type="checkbox" id="mainbola"><label for="mainbola">Main Bola</label>
+                    <br>
+                    <label for="lainnya">Lainnya :</label>
+                    <input type="text" name="" id="lainnya">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h4>Ceritakan Dirimu</h4>
+                </th>
+                <th>
+                    <textarea name="" id="ceritadiri" cols="30" rows="5"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th>Pilih Tempat Lahir</th>
+                <th>
+                    <select name="" id="kota">
+                        <option value="">Jakarta</option>
+                        <option value="">Bandung</option>
+                        <option value="">Cilacap</option>
+                    </select>
+                    <br>
+                    <button type="submit">Daftar</button>
+                </th>
+            </tr>
+        </tbody>
+        </form>
+    </table>
+</body>
+</html>

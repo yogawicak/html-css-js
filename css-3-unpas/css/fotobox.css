@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(208, 209, 212);
+    height: 1000px;
+}
+
+.judul {
+    margin: auto;
+    font-family: 'Arvo', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    /* letter-spacing: 0.1px; */
+}
+
+.judul h2 {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 2px 2px rgba(253, 254, 255, 0.755); */
+}
+
+.box-biografi {
+    margin: auto;
+    margin-top: 15px;
+    padding: 25px;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px;
+}
+
+.isi-biografi li {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 7px 2px;
+    float: left;
+    position: relative;
+    /* background-image: url(../../img/WKt6e9w4_400x400.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -1px; */
+}
+
+.isi-biografi .ahmad-zaky img {
+    height: 150px;
+    width: 150px;
+}
+
+.isi-biografi .alfatih-timur img {
+    /* margin-top: 10px;
+    margin-left: -153px; */
+    width: 150px;
+    height: 150px;
+    filter: grayscale(100%);
+}
+
+.isi-biografi .nadiem img {
+    /* margin-top: -30px;
+    margin-left: -310px; */
+    width: 150px;
+    height: 150px;
+    filter: grayscale(100%);
+}
+
+.isi-biografi .iman img{
+    width: 150px;
+    height: 150px;
+    filter: grayscale(100%);
+}
+
+.isi-biografi .alfatih-timur {
+    margin-left: 14px;
+}
+
+.isi-biografi .nadiem {
+    margin-left: 14px;
+}
+
+.isi-biografi .iman {
+    margin-left: 14px;
+}
+
+.isi-biografi img{
+    border-radius: 50%;
+}
+
+.isi-biografi span{
+    position: absolute;
+    top: 0px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 1px 1px 5px white;
+    text-align: center;
+    line-height: 150px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.isi-biografi li a:hover span{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.overlay{
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    /* opacity: 0; */
+    z-index: 999;
+    transition: 1s;
+    padding: 0px;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.693);
+    /* opacity: 0.8; */
+    padding-top: 100px;
+}
+
+.isi-biografi .ahmad-zaky .overlay .gambar-zaki{
+    display: block;
+    width: 10px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 0%;
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+}
+
+.isi-biografi .ahmad-zaky .overlay:target .gambar-zaki{
+    animation: boxzoom 1s;
+}
+
+.overlay .close-button img{
+    width: 40px;
+    height: auto;
+}
+
+.overlay .close-button{
+    position: absolute;
+    top: 145px;
+    right: 363px;
+    color: black;
+    animation: boxzoom 1s;
+}
+
+.close-button:target{
+    animation: boxclose 1s;
+}
+
+@keyframes boxzoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes boxclose{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}

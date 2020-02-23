@@ -1,0 +1,41 @@
+.box-dimensi{
+    background-color: darkkhaki;
+    width: 210px;
+    height: 410px;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.note h4{
+    background-color: darkmagenta;
+}
+
+
+.box1 {
+    background-color: chartreuse;
+    width: 200px;
+    height: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.box2{
+    background-color: rgb(16, 224, 224);
+    width: 150px;
+    height: 150px;
+}
+
+.box-overflow{
+    background-color: dimgrey;
+    width: 210px;
+    height: 240px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box-overflow .box3 .box3-1{
+    background-color: rgb(226, 43, 177);
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
